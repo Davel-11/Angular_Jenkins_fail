@@ -1,6 +1,6 @@
 node {
     def to = emailextrecipients([
-      [$class: 'davelaltan@gmail.com']
+      [$class: 'cdaltan']
     ])    
     def commit_id
       try
