@@ -1,6 +1,9 @@
 node {
-    def to = emailextrecipients([      
-    ])    
+    def to = emailextrecipients([
+          [$class: 'CulpritsRecipientProvider'],
+          [$class: 'DevelopersRecipientProvider'],
+          [$class: 'RequesterRecipientProvider']
+    ]) 
     def commit_id
       try
       {     
